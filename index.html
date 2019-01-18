@@ -57,7 +57,7 @@
 				<img title="{site.order_company}" alt="{site.order_company}" src="<%templateskin%>/images/logo.png">
 			</div>
 			<h1>西安万家灯火信息技术有限公司</h1>
-			<p>万家灯火CMS系统 先天快人一步</p>
+  <p>万家灯火CMS系统 先天快人一步</p>
 		</div>
 		<!--banner-->	
 		<div class="banner wow fadeInDown  bounceInDown" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInDown;">
@@ -141,6 +141,7 @@
 			<h4>快人一步，万家灯火让你赢在网络营销起跑线上</h4>
 			<div class="adm1-line"></div>
 			<p>6000家企业共同见证网络营销一个好的网站不仅能赚钱</p>
+		
 			
 			<div class="adm-tel">
 				<a href="tel:{site.freecall}"  title="{site.freecall}">
@@ -180,36 +181,8 @@
 		</div>
 		
 		<!--adv-->
-		    <%template src="ys.html"%>
-		<!--witness-->
-		
-		<div class="witness">
-			<h3 class="title wow fadeInDown animated" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInDown;" >
-				<a href="<%linkurl(0,"60")%>"  title="客户见证">客户见证</a>
-				<div class="title-line"></div>
-			</h3>
-			
-			 <!-- Swiper -->
-			  <div class="swiper-container witness-box container wow fadeInUp animated" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;" >
-			    <div class="swiper-wrapper">
-				<%set DataTable khjzlist=get_content_list(60,6)%>
-					
-						  <%foreach(DataRow dr in khjzlist.Rows)%>
-			      <div class="swiper-slide ">
-			      	<a href="<%linkurl(0,{dr[id]})%>"  title="{dr[title]}">
-			      		<div class="container">
-				      		<img title="{dr[title]}" alt="{dr[title]}" src="{dr[thumb]}"/>
-				      		<h4>{dr[title]}...</h4>
-				      		<p>查看详情</p>
-			      		</div>
-			      	</a>
-			      </div>
-				  <%/foreach%>
-			    </div>
-			
-			  </div>
-
-		</div>
+		   <%template src="ys.html"%> 	
+		   
 		
 		<!--about-->
 		<div class="about">
@@ -293,7 +266,7 @@
 				<a href="/"  title="" class="gotop wow animated" style="visibility: visible;"></a>
 				<div class="container">
 					<div class="ewm wow fadeInUp animated" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;" >
-						<img src="<%templateskin%>/images/banner-1.jpg" alt="" />
+						<img src="{site.qrcode}" alt="" />
 					</div>
 					<div class="copyright wow fadeInDown animated" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInDown;" >
 						 联系人：{site.contrctperson} 手机：{site.mobile}<br>
@@ -303,7 +276,7 @@
 					</div>
 					
 					<div id="kefu-ball">
-						<a href="/" title="{site.order_company}"><img src="{site.qrcode}" alt="{site.order_company}" /></a>
+						<a href="tel:{site.freecall}" title="{site.order_company}"><img src="<%templateskin%>/images/kefu.png" alt="{site.order_company}" /></a>
 					</div>
 				</div>
 			</div>
