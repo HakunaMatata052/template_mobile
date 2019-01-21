@@ -25,11 +25,7 @@ $(function() {
 });
 $(function() {
 	$('.goback').click(function() {
-		if(window.history.length > 1) {
-				window.location.href=document.referrer;
-		} else {
-			window.location.href = '/'
-		}
+		window.location.href = '/'
 	})
 });
 $(function() {
