@@ -24,25 +24,8 @@ $(function() {
 	})
 });
 $(function() {
-	$('.go').click(function() {
-		var $a = $(this);
-		var $aHref = $a.attr("href");
-		$a.attr("data-href", $aHref);
-		$a.attr("href", "javascript:;");
-		$('#page').addClass("goon");
-		setTimeout(function() {
-			location.href = $aHref;
-		}, 300)
-	});
 	$('.goback').click(function() {
-		if(window.history.length > 1) {
-			$('#page').addClass("comeback");
-			setTimeout(function() {
-				window.location.href=document.referrer;
-			}, 300)
-		} else {
-			window.location.href = '/'
-		}
+		window.location.href = '/'
 	})
 });
 $(function() {
