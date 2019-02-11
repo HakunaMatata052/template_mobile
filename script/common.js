@@ -25,7 +25,11 @@ $(function() {
 });
 $(function() {
 	$('.goback').click(function() {
-		window.location.href = '/'
+		if(window.history.length > 1) {
+				window.location.href=document.referrer;
+		} else {
+			window.location.href = '/'
+		}
 	})
 });
 $(function() {
@@ -34,6 +38,3 @@ $(function() {
 		$(this).css('height', $width * (3 / 4))
 	})
 });
-$(function() {
-	new WOW().init();
-})
