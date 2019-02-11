@@ -24,6 +24,8 @@
         .iske{background: rgba({site.mcolor}, 1);}
         .product-cat a { border: 1px solid rgba({site.mcolor}, .09);}
 		.jzzx ul li{box-shadow:2px 2px 24px rgba({site.mcolor}, .3);}
+		.hex{ height:1px; width:100%; box-shadow:2px 2px 24px rgba({site.mcolor}, .8);margin-top: 40px; display:block;}
+		
         .tt {background: rgba({site.mcolor}, .025);}
         .case .imm{ box-shadow:2px 2px 24px rgba({site.mcolor}, .4);}
 		.iske img{box-shadow:0px 2px 24px rgba({site.mcolor}, .4);}
@@ -65,7 +67,7 @@
         <div class="clearfix">
         </div>
         <h1>
-            满足不同行业不同环境，让信号无隙传输</h1>
+      为您提供个性化定制服务</h1>
     </div>
     <div class="banner wow fadeInUp">
         <div class="swiper">
@@ -153,9 +155,9 @@
     <!--优势-->
     <div class="tt">
         <h4 class="wow fadeInUp">
-             责任铸就品质，服务打造品牌</h4>
+        用材注重质量 制作注重细节</h4>
         <p class="wow fadeInUp" data-wow-delay="0.1s">
-         以市场为导向，提供令客户满意的设计方案和产品定制</p>
+     看的见的，看不见的，方大都用心完成</p>
         <a href="tel:{site.freecall}" class="wow fadeInUp" data-wow-delay="0.2s">全国热线：{site.freecall}<em>立即拨打</em></a>
     </div>
     <!--案例-->
@@ -209,33 +211,9 @@
         <p>
           多家连锁品牌建立合作伙伴</p>
     </div>
-    <img src="<%templateskin%>/pic/01.jpg" class="hex" alt="" />
-    <div class="jzzx">
-        <h3>
-            <a href="<%linkurl(0,"60")%>" title="">客户见证</a></h3>
-        <ul>
-            <%set DataTable yyt_witness_List=get_content_list(60,2)%>
-            <%foreach(DataRow yyt in yyt_witness_List.Rows)%>
-            <li><a href="<%linkurl(0,{yyt[catid]},{yyt[id]})%>" title="{yyt[title]}">
-                <img alt="{yyt[title]}" title="{yyt[title]}" src="{yyt[thumb]}" />
-                <h4>
-                    {yyt[title]}</h4>
-                <i></i>
-                <p>
-                    <%cutstring({yyt[zhaiyao]},30)%></p>
-            </a></li>
-            <%/foreach%>
-        </ul>
-    </div>
-    <div class="clearfix">
-    </div>
-    <div class="tt">
-        <h4 class="wow fadeInUp">
-          不做低价恶意竞争，以产品质量赢得客户信赖</h4>
-        <p class="wow fadeInUp" data-wow-delay="0.1s">
-          秉持公平公正原则，承接各同行产能外的分单</p>
-        <a href="tel:{site.freecall}" class="wow fadeInUp" data-wow-delay="0.2s">全国热线：{site.freecall}<em>立即拨打</em></a>
-    </div>
+    <i class="hex"></i>
+    
+
     <div class="clearfix">
     </div>
     <div class="news menu-item">
