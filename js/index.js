@@ -3,6 +3,7 @@
 				var banner = new Swiper('.banner .swiper .swiper-container', {
 		effect:"coverflow",
 		loop : true,
+		autoplay:true,
 			});
 			var currentSwiper = new Swiper('.current-swiper', {
 				loop: true,
