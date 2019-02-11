@@ -11,7 +11,7 @@ html {
 
 body {
 	margin: 0 auto;
-	font-size: 1.4rem;
+	font-size: 1.6rem;
 	line-height: 1.5;
 	color: #333333;
 	background-color: white;
@@ -328,7 +328,10 @@ body{
 	clear: both;
 }
 
-
+.logo-img{
+	font-size: 2rem;
+	padding-bottom: 0.1rem;
+}
 /*   头部      */
 
 .header {
@@ -597,7 +600,13 @@ h3.title a{
 	width: 100%;
 	height: 100%;
 }
-
+.swiper-slide-products ul li p{
+	    line-height: 50px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
 .product-center .item h4 {
 	border-radius: 10px;
 	background: #fff;
@@ -657,16 +666,15 @@ h3.title a{
 	display: block;
 	float: left;
 	padding: 0 10px;
-		margin: 6px;
+	margin: 6px;
 }
 
 .product-tabs .products-menu {
 	margin: 20px 0;
 	border-right: 1px solid #ccc;
-	text-align: center;
-	overflow: hidden;
-text-overflow:ellipsis;
-white-space: nowrap;
+	text-align: center;    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .selected{
 	color:rgba(50,179,255,1);
@@ -677,16 +685,7 @@ white-space: nowrap;
     height: 222px;
     display: block;
 }
-.swiper-slide-products ul li p{
-    width: 260px;
-    margin: 0 auto;
-    text-align: center;
-    overflow: hidden;
-    line-height: 40px;
-    overflow: hidden;
-text-overflow:ellipsis;
-white-space: nowrap;
-}
+
 /*adm*/
 .adm{
 	width: 100%;
@@ -707,7 +706,7 @@ white-space: nowrap;
     margin: 10px auto;
 }
 .adm p{
-	font:18px/30px "microsoft yahei";
+	font:20px/30px "microsoft yahei";
 	color: #fff;
 	text-align: center;
 }
@@ -792,7 +791,7 @@ white-space: nowrap;
 	margin: 5px 0;
 }
 .case-box p{
-	font: 18px/30px "microsoft yahei";
+	font: 24px/30px "microsoft yahei";
 	color: #919191;
 	display: -webkit-box;
 -webkit-box-orient: vertical;
@@ -941,8 +940,8 @@ white-space: nowrap;
 }
 
 .witness-box a{
-	width: 188px;
-	height: 246px;
+	width: 260px;
+	height: 326px;
 	display: block;
 	background: #fff;
 	margin-top: 30px;
@@ -959,7 +958,7 @@ white-space: nowrap;
 	
 }
 .witness-box h4{
-	font: 20px/36px "microsoft yahei";
+	font: 24px/36px "microsoft yahei";
 	color: #333;
 	text-align: center;
 	padding-top: 20px;
@@ -1018,6 +1017,9 @@ h3.title-1 a{
 	position: absolute;
 	box-shadow: 1px 2px 1px rgba(0,0,0,.1);
 	top: 40px;
+}
+.about-img img{
+	width: 100%;
 }
 .about-text{
 	position: relative;
@@ -1142,9 +1144,9 @@ white-space: nowrap;
 #tabs-news p{
 	display: -webkit-box;
 	-webkit-box-orient: vertical;
-	-webkit-line-clamp: 4;
+	-webkit-line-clamp: 3;
 	overflow: hidden;
-	font:normal 18px/26px "microsoft yahei";
+	font: normal 24px/35px "microsoft yahei";
 	color: #919191;
 }
 

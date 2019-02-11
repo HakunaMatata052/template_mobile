@@ -14,8 +14,8 @@
 
 
 var productTab = new Swiper('.product-tabs', {
-    slidesPerView: 4,	
-	initialSlide :2,
+    slidesPerView: 4,   
+    initialSlide :2,
     centeredSlides: true,
     pagination: {
         el: '.swiper-pagination',
@@ -27,17 +27,17 @@ var productTab = new Swiper('.product-tabs', {
 
 var productContent = new Swiper('.product-content', {
     spaceBetween: 30,
-	initialSlide :2,
+    initialSlide :2,
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
     },
-	on: {
-		slideChangeTransitionStart: function() {
-			$(".products-dd .porducts-b1 .selected").removeClass('selected');
-			$(".products-dd .porducts-b1 .swiper-slide").eq(this.activeIndex).addClass('selected');
-		}
-	}
+    on: {
+        slideChangeTransitionStart: function() {
+            $(".products-dd .porducts-b1 .selected").removeClass('selected');
+            $(".products-dd .porducts-b1 .swiper-slide").eq(this.activeIndex).addClass('selected');
+        }
+    }
 
 });
 productContent.controller.control = productTab
@@ -74,9 +74,9 @@ var swiper = new Swiper('.adv-box', {
 
 
 var swiper = new Swiper('.witness-box', {
-    slidesPerView: 3,
+    slidesPerView: 2,
     centeredSlides: true,
-    spaceBetween: 15,
+    spaceBetween: 2,
     loop: true,
     loopFillGroupWithBlank: false,
 
