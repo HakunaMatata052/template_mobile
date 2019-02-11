@@ -1,4 +1,4 @@
-$(function() {
+﻿$(function() {
 	$('#page').removeClass("goout");
 });
 $(function() {
@@ -24,8 +24,25 @@ $(function() {
 	})
 });
 $(function() {
+	$('.go').click(function() {
+		var $a = $(this);
+		var $aHref = $a.attr("href");
+		$a.attr("data-href", $aHref);
+		$a.attr("href", "javascript:;");
+		$('#page').addClass("goon");
+		setTimeout(function() {
+			location.href = $aHref;
+		}, 300)
+	});
 	$('.goback').click(function() {
-		window.location.href = '/'
+		if(window.history.length > 1) {
+			$('#page').addClass("comeback");
+			setTimeout(function() {
+				window.location.href=document.referrer;
+			}, 300)
+		} else {
+			window.location.href = '/'
+		}
 	})
 });
 $(function() {
@@ -34,3 +51,6 @@ $(function() {
 		$(this).css('height', $width * (3 / 4))
 	})
 });
+$(function() {
+	new WOW().init();
+})
