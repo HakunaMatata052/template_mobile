@@ -177,7 +177,7 @@ background: rgba({site.mcolor}, 1);
       <div class="banner_bg "> <img src="<%templateskin%>/img/banner_bg.png" alt="" title=""> </div>
       <div class="logo-img"> <a href="/" title="{site.order_company}"><img src="<%templateskin%>/img/logo.png" title="{site.order_company}" alt="{site.order_company}" /></a> </div>
       <h1><a href="/" title="{site.order_company}">{site.order_company}</a></h1>
-      <p>万家灯火CMS系统 先天快人一步</p>
+      <p>万家灯火CMS系统先天快人一步</p>
     </div>
   </div>
 </div>
@@ -297,53 +297,7 @@ background: rgba({site.mcolor}, 1);
   </div>
   <%/foreach%>
 </div>
-<div class="container">
-  <div class="kehu">
-    <div class="yinying">
-      <div class="menu-title wow fadeInUp">
-        <h3><a href="" title="客户见证"><i></i>客户见证<i></i></a></h3>
-      </div>
-      <div id="tabs-kehu" class="swiper-container wow fadeInUp" >
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <%set DataTable jianzhenglist=get_content_list(60,2)%>
-            <%foreach(DataRow dr in jianzhenglist.Rows)%>
-            <a href="<%linkurl(0,{dr[catid]},{dr[id]})%>" class="item" title="{dr[title]}" >
-            <div class="img"> <img src="{dr[thumb]}" title="{dr[title]}" alt="{dr[title]}"> </div>
-            <div class="info">
-              <h4>{dr[title]}</h4>
-              <div class="con">
-                <%cutstring({dr[zhaiyao]},120)%>
-                ...</div>
-            </div>
-            <p><img src="<%templateskin%>/img/jh.jpg" alt="更多" title="更多"></p>
-            </a>
-            <%/foreach%>
-          </div>
-          <div class="swiper-slide" >
-            <%set DataTable jianzhenglist1=get_content_list(60,4)%>
-            <%set int j=1%>
-            <%foreach(DataRow dr in jianzhenglist1.Rows)%>
-            <%if(j>2)%>
-            <a href="<%linkurl(0,{dr[catid]},{dr[id]})%>" class="item" title="{dr[title]}">
-            <div class="img"> <img src="{dr[thumb]}" title="{dr[title]}" alt="{dr[title]}"> </div>
-            <div class="info">
-              <h4>{dr[title]}</h4>
-              <div class="con">
-                <%cutstring({dr[zhaiyao]},120)%>
-                ...</div>
-            </div>
-            <p><img src="<%templateskin%>/img/jh.jpg" alt="更多" title="更多"></p>
-            </a>
-            <%/if%>
-            <%set j=j+1%>
-            <%/foreach%>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+
 <div class="container">
   <div class="news">
     <div class="yinying">
