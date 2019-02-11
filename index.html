@@ -155,7 +155,7 @@
   </div>
 </div>
 <!--nav-->
-<div class="nav wow fadeInUp" data-wow-delay=".2s">
+<div class="nav fadeInUp">
   <ul>
     <%set DataTable daohang=get_category_list(-1,8,"mobile=1","listorder asc")%>
     <%set int i=1%>
@@ -173,7 +173,7 @@
       <p>Hot Product</p>
       <span>//////</span> </div>
   </div>
-  <div class="menu-content wow fadeInUp">
+  <div class="menu-content fadeInUp">
     <div class="tj">
       <%set DataTable goodslistrm=get_content_list(48,1,"hot=1","listorder desc,id desc")%>
       <%foreach(DataRow drnktj in goodslistrm.Rows)%>
@@ -212,7 +212,7 @@
       <span>//////</span> </div>
   </div>
   <div class="menu-content">
-    <div class="tabs wow fadeInUp" data-wow-delay=".1s">
+    <div class="tabs fadeInUp">
       <%set DataTable categoryList=get_category_list(48,3,"1=1")%>
       <%set int j=1%>
       <%foreach(DataRow cdr in categoryList.Rows)%>
@@ -224,7 +224,7 @@
       <%set j=j+1%>
       <%/foreach%>
       <a href="<%linkurl(1,"48")%>" title="更多">更多</a> </div>
-    <div id="tabs-product" class="swiper-container wow fadeInUp" data-wow-delay=".2s">
+    <div id="tabs-product" class="swiper-container fadeInUp">
       <div class="swiper-wrapper">
         <%loop drn categoryList%>
         <div class="swiper-slide">
@@ -247,11 +247,11 @@
 <!--小ban-->
 <div class="menu-content">
   <div class="tt">
-    <h4 class="wow fadeInUp">好工艺、好材料、铸就好效果
+    <h4 class="fadeInUp">好工艺、好材料、铸就好效果
 
 </h4>
-    <p class="wow fadeInUp" data-wow-delay="0.1s">使用寿命长、库存充足、保证货期</p>
-    <a href="tel:{site.freecall}" class="wow fadeInUp" data-wow-delay="0.2s">立即拨打 | 全国热线：{site.freecall}</a> <img src="<%templateskin%>/img/tu.jpg"> </div>
+    <p class="fadeInUp">使用寿命长、库存充足、保证货期</p>
+    <a href="tel:{site.freecall}" class="fadeInUp">立即拨打 | 全国热线：{site.freecall}</a> <img src="<%templateskin%>/img/tu.jpg"> </div>
 </div>
 <div class="case container menu-item">
   <div class="menu-title">
@@ -260,7 +260,7 @@
       <p>Case</p>
       <span>//////</span> </div>
   </div>
-  <div class="menu-content wow fadeInUp">
+  <div class="menu-content fadeInUp">
     <ul>
       <%set DataTable caselist=get_content_list(57,3)%>
       <%foreach(DataRow dr in caselist.Rows)%>
@@ -278,13 +278,13 @@
   <div class="menu-content">
     <%set DataTable about=get_category_info(54)%>
     <%foreach(DataRow cdr in about.Rows)%>
-    <div class="info wow fadeInUp">
+    <div class="info fadeInUp">
       <h4> <a href="<%linkurl(0,{cdr[id]})%>" title="{site.order_company}">{site.order_company}</a> </h4>
       <p>
         <%cutstring({cdr[content]},300)%>
       </p>
     </div>
-    <div class="img wow fadeInUp" data-wow-delay=".3s"> <a href="<%linkurl(0,{cdr[id]})%>" title="{site.order_company}"><img src="{cdr[image]}" title="{site.order_company}" alt="{site.order_company}"></a> </div>
+    <div class="img fadeInUp"> <a href="<%linkurl(0,{cdr[id]})%>" title="{site.order_company}"><img src="{cdr[image]}" title="{site.order_company}" alt="{site.order_company}"></a> </div>
     <%/foreach%>
     <div class="tt2">
       <div class="tt2_cont"> <img src="<%templateskin%>/img/tu.png">
@@ -296,7 +296,7 @@
   </div>
 </div>
 <div class="news container menu-item">
-  <div class="tabs wow fadeInUp">
+  <div class="tabs fadeInUp">
     <%set DataTable newsList=get_category_list(22)%>
     <%set int m=1%>
     <%loop drk newsList%>
@@ -332,8 +332,8 @@
 </div>
 <div class="footer">
   <div class="container">
-    <div class="info wow">
-      <div class="qrcode wow fadeInUp"> <img src="{site.qrcode}" alt="二维码" title="二维码" /> </div>
+    <div class="info">
+      <div class="qrcode fadeInUp"> <img src="{site.qrcode}" alt="二维码" title="二维码" /> </div>
       <p>联系人：{site.contrctperson} 手机：{site.mobile}<br>
         电话：{site.tel}<br>
         地址：{site.address} <br>
