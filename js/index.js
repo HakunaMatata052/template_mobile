@@ -100,6 +100,16 @@ var newsswiper = new Swiper('.index_news .swiper-container', {
     parallax: true
 
 });
+
+
+var wow = new WOW({
+    boxClass: 'wow',
+    animateClass: 'animated',
+    offset: 0,
+    mobile: true,
+    live: true
+});
+wow.init();
 new Inertia(document.getElementById('kefu-ball'));
 
 
