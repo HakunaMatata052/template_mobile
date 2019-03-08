@@ -323,7 +323,7 @@ textarea::-webkit-input-placeholder {
 }
 .top .teltop{
 	font-family: arial;
-	color: #1b56b2;
+	color: #0f943b;
 	font-size: 36px;
 	font-weight: bold;
 }
@@ -333,7 +333,6 @@ textarea::-webkit-input-placeholder {
 	height: 120px;
 	border-bottom: 1px solid #fff;
 	border-right: 1px solid #fff;
-	background: #1b56b2;
 }
 .navmobile li{
 	float: left;
@@ -494,7 +493,6 @@ textarea::-webkit-input-placeholder {
 .advheader h3{
 	font-size: 36px;
 	font-weight: bold;
-	color: #1b56b2;
 }
 .advheader span{
 	font-family: arial;
@@ -534,7 +532,6 @@ textarea::-webkit-input-placeholder {
 	display: block;
 	font-size: 30px;
 	font-weight: bold;
-	color: #1b56b2;
 	border-bottom: 1px solid #a0a0a0;
 }
 .advnumber span{
@@ -554,11 +551,9 @@ textarea::-webkit-input-placeholder {
 	overflow: hidden;
 	height: 230px;
 }
-.adv .swiper-slide strong {
-	
+.adv .swiper-slide strong {	
 	font-size: 24px;
 	font-weight:bold;
-	color: #1b56b2;
 }
 
 .adv .swiper-slide p {
@@ -596,7 +591,7 @@ textarea::-webkit-input-placeholder {
 	font-weight: normal;
 }
 
-.case i{width:42px;height:42px;float:left;margin:9px 18px 0 0;background:#1b56b2 url(../img/icon1.png) no-repeat;display:inline-block;border-radius:50%;}
+.case i{width:42px;height:42px;float:left;margin:9px 18px 0 0;display:inline-block;border-radius:50%;}
 
 .lm span{
 	float: right;
@@ -641,7 +636,7 @@ textarea::-webkit-input-placeholder {
     margin-bottom: 30px;
     box-shadow: 2px 2px 24px rgba(0, 0, 0, .3);
 }
-.kh i{width:42px;height:42px;float:left;margin:9px 18px 0 0;background:#1b56b2 url(../img/icon2.png) no-repeat;display:inline-block;border-radius:50%;}
+.kh i{width:42px;height:42px;float:left;margin:9px 18px 0 0;background:#0f943b url(../img/icon2.png) no-repeat;display:inline-block;border-radius:50%;}
 /*公司*/
 .about{
 	width: 100%;
@@ -664,7 +659,6 @@ textarea::-webkit-input-placeholder {
 	left: 48px;
 }
 .about .aboutcon h3{
-	color: #1b56b2;
 	font-weight: bold;
 	font-size: 24px;
 }
@@ -679,7 +673,6 @@ textarea::-webkit-input-placeholder {
 	display: block;
 	width: 56px;
 	height: 26px;
-	background: #1b56b2;
 	text-align: center;
 	line-height: 26px;
 	border-radius:100px ;
@@ -765,7 +758,7 @@ textarea::-webkit-input-placeholder {
 	border-left: none;
 }
 
-.newsone i{width:42px;height:42px;float:left;margin:9px 18px 0 0;background:#1b56b2 url(../img/icon3.png) no-repeat;display:inline-block;border-radius:50%;}
+.newsone i{width:42px;height:42px;float:left;margin:9px 18px 0 0;display:inline-block;border-radius:50%;}
 
 .news02{
 	overflow:hidden;
@@ -819,7 +812,7 @@ textarea::-webkit-input-placeholder {
 	border-top: none;
 }
 
-.newstwo i{width:42px;height:42px;float:left;margin:9px 18px 0 0;background:#1b56b2 url(../img/icon4.png) no-repeat;display:inline-block;border-radius:50%;}
+.newstwo i{width:42px;height:42px;float:left;margin:9px 18px 0 0;display:inline-block;border-radius:50%;}
 
 
 .news03en ul{
@@ -846,7 +839,7 @@ textarea::-webkit-input-placeholder {
 	text-overflow: ellipsis;
     white-space: nowrap;
 }
-.newthree i{width:42px;height:42px;float:left;margin:9px 18px 0 0;background:#1b56b2 url(../img/icon5.png) no-repeat;display:inline-block;border-radius:50%;}
+.newthree i{width:42px;height:42px;float:left;margin:9px 18px 0 0;display:inline-block;border-radius:50%;}
 /*版权*/
 .copy{
 	overflow: hidden;
@@ -880,11 +873,9 @@ textarea::-webkit-input-placeholder {
 	margin: 8px auto 8px;
 }
 #kefu-ball{
-	background: rgba(27, 86, 178, 1);
 	position: fixed;
 	right: 0;
 	bottom: 30%;
 	border-radius: 50%;
 	z-index: 99999;
-	box-shadow: 0px 0px 20px 0px rgba(27, 86, 178, .6);
 }
